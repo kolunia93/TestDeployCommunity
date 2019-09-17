@@ -17,6 +17,11 @@
         <members>React_Test1</members>
         <name>SiteDotCom</name>
     </types>
+     <types>
+        <members>sa with view enc data</members>
+        <members>demo user</members>
+        <name>profile</name>
+    </types>
 
     <version>46.0</version>
 </Package>
