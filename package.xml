@@ -20,7 +20,7 @@
      <types>
         <members>sa with view enc data</members>
         <members>demo user</members>
-        <name>profile</name>
+        <name>Profile</name>
     </types>
 
     <version>46.0</version>
