@@ -1,0 +1,5 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="ReactApp_Controller_Login_LCC" >
+    
+	<lightning:container aura:id="reactApp" src="{!$Resource.ReactRegistration + '/index.html'}" class="container" onmessage="{!c.handleMessage}" onerror="{!c.handleError}"/>
+    
+</aura:component>

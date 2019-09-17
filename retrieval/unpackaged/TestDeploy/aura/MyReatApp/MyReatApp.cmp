@@ -1,0 +1,23 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" >
+
+
+    <aura:attribute type="String" name="param" default="" />
+    <aura:attribute type="List" name="selected"  />
+	 <lightning:card  title="Lightning Component">
+        <aura:set attribute="actions">
+            <lightning:input label="Search " value="{!v.param}" type="number"/>
+            <lightning:button label="Send to react App" onclick="{!c.sendMessange}"/>
+        </aura:set>
+         <aura:iteration items="{!v.selected}" var="item">
+             <lightning:pill label="{!item}" href="#" onremove="{!c.handleRemove }"/>
+         </aura:iteration>
+        <p class="slds-p-horizontal_small">
+            Section in bottom is react app
+        </p>
+   
+        
+        <lightning:container aura:id="reactApp" src="{!$Resource.MyReatApp + '/index.html'}" class="container" onmessage="{!c.handleMessage}" onerror="{!c.handleError}"/>
+ </lightning:card>
+  
+
+</aura:component>

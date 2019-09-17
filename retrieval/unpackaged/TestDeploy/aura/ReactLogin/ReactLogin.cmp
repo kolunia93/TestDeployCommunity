@@ -1,0 +1,58 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="ReactApp_Controller_Login_LCC" >
+    <aura:attribute name='username' type='String' default='' />
+    <aura:attribute name="password" type="String" />
+    <aura:attribute name='hidden' type='String'  default='ddd'/>
+    <aura:attribute name='messange' type='String'  default=''/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <div>
+        <form role="form" class="mainForm" id="donor-followup-0" >
+            <div id="dialog_prolog" class="dialog_prolog">
+                <div>
+                <p class="dialog_prolog__node" tabindex="-1" style='padding-top: 30px;'>Welcome to Login Page.</p>
+                <p class="dialog_prolog__node" tabindex="-1"> Some text here.</p>
+                <p class="dialog_prolog__node" tabindex="-1" style='padding-bottom: 30px;'>  Some other text here.</p>
+                </div>
+            </div>
+            {!v.password}
+            {!v.username}
+            <div class="onefield">
+                <div class="qAndBtns"><div>
+
+                        <div style="text-align: left;">
+                            <label class="grommetux-label">Your First Name:</label>
+                            <div class="grommetux-form-field" style="width: 100%; display: table; margin: 0px auto;">
+                                <span class="grommetux-form-field__contents">
+                                    <input  id="username"  class="grommetux-text-input" value='{!v.username}'/>
+                                    
+                                    <input autocomplete="false" id="usernamess" maxlength="100" class="grommetux-text-input" 
+                                           style='margin-top:-500px !important;position: absolute; max-width: 0px;max-height: 0px;border: none !important;background: none;' value="{!v.hidden}"/>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div style="text-align: left;">
+                            <label class="grommetux-label ">Your Last Name:</label>
+                            <div class="grommetux-form-field" aria-labelledby="dialog_prolog__node" aria-live="assertive" style="width: 100%; display: table; margin: 0px auto;">
+                                <span class="grommetux-form-field__contents">
+                                    <input  id="password" maxlength="100" class="grommetux-text-input grommetux-input"  value="{!v.password}" type='password'/>
+                                </span>
+                            </div>
+                        </div>
+                    <aura:if isTrue="{!v.messange}">
+                    	<span class="grommetux-form-field__error">{!v.messange}</span>
+                    </aura:if>
+                    </div>
+                    
+                    </div>
+                </div>
+        </form>
+    </div>
+    
+    <div class='loginButttonWrapper'>
+        <button  id="login" class='loginButtton' onclick="{!c.handleLogin}">
+            Login</button>
+    </div>
+    <button class="debugButton" onclick='{!c.register}'
+            style="">QA</button>
+</aura:component>
