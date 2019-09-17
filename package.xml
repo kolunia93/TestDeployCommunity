@@ -9,6 +9,10 @@
         <members>React_Test</members>
         <name>CustomSite</name>
     </types>
+    <types>
+        <members>CommunitiesLanding</members>
+        <name>ApexPage</name>
+    </types>
 
     <version>46.0</version>
 </Package>
