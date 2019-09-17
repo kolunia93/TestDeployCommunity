@@ -2,27 +2,25 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>SF DX Demo</fullName>
     <types>
-        <members>React Test</members>
-        <name>Network</name>
+        <members>CommunitiesLanding</members>
+        <name>ApexPage</name>
     </types>
-
     <types>
         <members>React_Test</members>
         <name>CustomSite</name>
     </types>
     <types>
-        <members>CommunitiesLanding</members>
-        <name>ApexPage</name>
+        <members>React Test</members>
+        <name>Network</name>
+    </types>
+    <types>
+        <members>demo user</members>
+        <members>sa with view enc data</members>
+        <name>Profile</name>
     </types>
     <types>
         <members>React_Test1</members>
         <name>SiteDotCom</name>
     </types>
-     <types>
-        <members>sa with view enc data</members>
-        <members>demo user</members>
-        <name>Profile</name>
-    </types>
-
     <version>46.0</version>
 </Package>
