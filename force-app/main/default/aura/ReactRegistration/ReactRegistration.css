@@ -1,0 +1,6 @@
+.THIS .container {
+    width: -webkit-fill-available !important;
+    height: -webkit-fill-available !important;
+    overflow: hidden;
+    
+}

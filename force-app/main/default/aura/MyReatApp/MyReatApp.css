@@ -1,0 +1,9 @@
+.THIS {
+    height: 500px;
+    font-size: 18pt;
+    font-family: 'Arial, Helvetica, sans-serif';
+    background-color: Lavender;
+}
+.THIS .container{
+    min-height: 520px;
+}
