@@ -13,6 +13,10 @@
         <members>CommunitiesLanding</members>
         <name>ApexPage</name>
     </types>
+    <types>
+        <members>React_Test1</members>
+        <name>SiteDotCom</name>
+    </types>
 
     <version>46.0</version>
 </Package>
